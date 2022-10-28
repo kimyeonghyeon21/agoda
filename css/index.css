@@ -1,0 +1,558 @@
+@charset "utf-8";
+
+body { font-family: 'OTWelcomeRA',sans-serif; color: #000; line-height: 1.5; font-size: 1.6rem; }
+
+.clearfix {content: ''; clear: both; display: block; }
+
+.inner { max-width: calc(100% - 10.509%); margin: 0 auto; }
+.inner_100 { max-width: 100%; margin: 0 auto; }
+
+#wrap { overflow: hidden; }
+
+section { padding-bottom: 250px; }
+#main h2 { font-family: 'SEBANG_Gothic_Bold',sans-serif; font-size: 5.5rem; padding-bottom: 20px; letter-spacing: -1px;}
+#main .link_box { color: #fff; font-size: 2rem; padding: 15px 30px 10px; display: inline-block; background: #000;}
+.swiper-pagination-bullet-active {
+    background-color: #000;
+  }
+
+.depth_title { font-size: 2rem; font-weight: 700; padding-top: 20px; }
+
+
+@media(max-width:1400px){
+    #header .depth_title { font-size: 1.8rem; }
+}
+
+@media(max-width:1200px){
+    #header .depth_title { font-size: 1.6rem; }
+}
+
+@media(max-width:1024px){
+    section { padding-bottom: 150px; }
+    #header .depth_title { font-size: 1.4rem; }
+    #main h2 { font-size: 3rem; }
+    #main .link_box { font-size: 1.6rem; padding: 10px 20px 5px; }
+}
+
+@media(max-width:786px){
+    section { padding-bottom: 100px; }    
+}
+
+
+
+
+
+/* haeder */
+#header { font-family: 'SEBANG_Gothic_Regular', sans-serif; padding: 19px 0; position: relative; z-index: 99; }
+#header .inner { display: flex; justify-content: space-between;  align-items: center; text-align: center; height: 42px; position: relative; z-index: 9; }
+#header .inner img { display: block; }
+#header .gnb { font-size: 2rem; }
+#header .gnb > li { float: left; display: block; padding: 7px 50px 10px; font-weight: 200; transition: color 0.5s; }
+#header .gnb > li:hover { color: #B24141; }
+#header .gnb > li h3 { color: #000; }
+
+#header .util li { float: left; font-size: 1.6rem;}
+#header .util li a { display: block; padding: 10px; color: #999; }
+
+
+#header .gnb > li > .depth2 { position: absolute; z-index: 5; top: 61px; left: 0; padding: 50px 12.086% 0 24.172%; display: flex; justify-content: space-between; height: 600px; width: 100%; background: #fff; height: 600px; box-shadow: inset 0 0 15px -5px rgba(0,0,0,0.1); }
+
+#header .gnb > li > .depth2 > div { position: absolute; left: 0; width: 15.764%; height: 400px; }
+#header .gnb > li:nth-of-type(1) > .depth2 > div { background: url('../img/main/travel/korea/gyeongju/gyeongju_main.jpg') no-repeat center center; background-size: cover; }
+#header .gnb > li:nth-of-type(2) > .depth2 > div { background: url('../img/main/travel/asia/tokyo/tokyo_main.jpg') no-repeat center center; background-size: cover;}
+#header .gnb > li:nth-of-type(3) > .depth2 > div { background: url('../img/main/homes1.jpg') no-repeat center center; background-size: cover;}
+#header .gnb > li:nth-of-type(4) > .depth2 > div { background: url('../img/main/gnb_traffic.jpg') no-repeat center center; background-size: cover;}
+#header .gnb > li:nth-of-type(5) > .depth2 > div { background: url('../img/main/homes2.jpg') no-repeat center center; background-size: cover;}
+
+#header .gnb > li > .depth2 h3 { font-size: 1.8rem; }
+#header .gnb > li > .depth2 li a { font-size: 1.5rem; color: #999; transition: color 0.5s; }
+#header .gnb > li > .depth2 li a:hover { color: #000; }
+
+
+
+/* 모바일메뉴 */
+#header .mb_ham { display: none; cursor: pointer; }
+#header .mb_ham img { display: block; }
+
+/* #wrap .mgnb:after { content: ''; display: block; clear: both; position: absolute; width: 40%; height: 100%; left: 0; top: 0; background: rgba(0,0,0,0.9); } */
+#header .mgnb_wrap {overflow-y: auto; z-index: 999; width: 60%; height: 100%; position: fixed; right: -100%; top: 0; background: #fff; }
+#header .mgnb { position: absolute; padding: 100px 40px; right: 0; width: 100%; }
+#header .mgnb .mgnb_util { border-bottom: 1px solid #000; border-top: 1px solid #000; }
+#header .mgnb .mgnb_util ul { display: flex; justify-content: space-between; }
+#header .mgnb .mgnb_util ul li a { display: block; color: #999; font-size: 1.5rem; padding: 20px; font-weight: 400; }
+#header .mgnb li h3 { font-size: 1.6rem; font-weight: 700; }
+#header .mgnb li a { font-size: 1.5rem; }
+#header .mgnb .mgnb_list { padding: 40px 0; }
+#header .mgnb .mgnb_list > li { font-size: 2rem; font-weight: 700; padding: 20px 0; cursor: pointer; }
+#header .mgnb .mgnb_list li ul { padding: 20px; }
+#header .mgnb .mgnb_list li ul h3 { font-size: 1.6rem; font-weight: 700; }
+#header .mgnb .mgnb_list li ul li { font-weight: 400; }
+#header .mgnb .mgnb_list li ul li a { color: #999; }
+#header .mgnb .mgnb_close {position: relative; position: absolute; right:20px; top: 20px; cursor: pointer; width: 50px; height: 50px; }
+#header .mgnb .mgnb_close:before { position: absolute; content: ''; display: block; clear: both; background: #000; width: 2px; height: 40px; left: 50%; top: 50%; transform: translate(-50%,-50%) rotate(45deg); }
+#header .mgnb .mgnb_close:after { position: absolute; content: ''; display: block; clear: both; background: #000; width: 2px; height: 40px; left: 50%; top: 50%; transform: translate(-50%,-50%) rotate(-45deg); }
+
+
+@media(max-width:1400px){
+    #header .gnb > li { padding: 7px 40px 10px; }
+    #header .util li { font-size: 1.5rem;}
+    #header .gnb > li > .depth2 > div { height: 350px; }
+    #header .gnb > li > .depth2 li a { font-size: 1.4rem; }
+}
+
+@media(max-width:1200px){
+    #header .gnb > li { padding: 7px 20px 10px; }
+    #header .gnb { font-size: 1.8rem; }
+    #header .util li { font-size: 1.4rem;}
+    #header .gnb > li > .depth2 > div { height: 300px; }
+    #header .gnb > li > .depth2 li a { font-size: 1.3rem; }
+}
+
+@media(max-width:1024px){
+    #header .gnb { display: none; }
+    #header .util li { display: none; }
+    #header .mb_ham {display: block;}
+    #header .inner { height: 35px;}
+    #header h1 img { transform: scale(0.8,0.8); }
+    #header { padding: 10px 0;}
+    #header .gnb > li > .depth2 > div { height: 250px; }
+    #header .gnb > li > .depth2 li a { font-size: 1.2rem; }
+}
+
+
+/* depth2_bg */
+#header .depth2_bg { background: #fff; height: 600px; position: absolute; top: 80px; z-index: 5; width: 100%; box-shadow: inset 0 0 15px -5px rgba(0,0,0,0.1);}
+
+
+
+
+/* mian */
+#mv { height: 700px; background: url(../img/main/mv_bg.png) no-repeat center center ; font-size: 2rem; }
+#mv .inner { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+#mv div { padding-bottom: 90px; }
+#mv .mv_choose { padding-top: 440px; width: 100%;}
+#mv .mv_choose select { background: rgba(0,0,0,0); font-family: 'OTWelcomeRA',sans-serif; font-size: 2.5rem; height: 40px; width: 260px;  padding-left: 10px; border-bottom: #000 1px solid; }
+#mv .mv_location input , .mv_date input { background: rgba(0,0,0,0); font-family: 'OTWelcomeRA',sans-serif; font-size: 2rem; border-bottom: 1px #000 solid; height: 40px;}
+#mv .mv_location { width: 13.137%; }
+#mv .mv_date { width: 24.172%; }
+#mv .mv_human { position: relative; border-bottom: 1px #000 solid; padding-bottom: 0; width: 24.172%; }
+#mv input { width: 100%; }
+
+#mv .mv_human i { cursor: pointer; position: absolute; top: 50%; left: 100%; transform: translate(-50%,-50%); }
+#mv .mv_human ul { width: 100%; padding: 10px 0; position: absolute; background: #fff; z-index: 100; transform: translate(0,2px); text-align: center; box-shadow: 0 0 5px rgba(0,0,0,0.5); } /* left를 사용하면 기준요조 기준으로 이동해버려서 위치를 새로 잡아야함 */
+#mv .mv_human ul li { cursor: pointer; padding: 15px 40px 10px;}
+#mv .mv_human ul li:hover { background: #eee;}
+
+#mv .mv_human .down.active:hover:before { transform: rotate(180deg); }
+
+
+@media(max-width:1024px){
+    #mv .mv_choose { padding-top: 300px; width: calc((100% - 40px)/2); }
+    #mv .mv_choose select { width: 100%; font-size: 2rem; }
+    #mv .mv_location input , .mv_date input { font-size: 1.5rem; }
+    #mv .mv_location { width: calc((100% - 40px)/2); }
+    #mv .mv_date { width: 100%; }
+    #mv .mv_human { width: calc(100% - 100px); font-size: 1.5rem; }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 종류별 숙소검색 */
+#icon_list { padding: 100px 6.568%; }
+#icon_list .inner { margin: 0 auto; }
+#icon_list img { transform: scale(0.7,0.7); display: block; }
+#icon_list ul { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+#icon_list ul li a { opacity: 0.4; transition: opacity 0.5s; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+#icon_list ul li a img { object-fit: cover; }
+
+#icon_list ul li a:hover { opacity: 1; }
+
+
+@media(max-width:1024px){
+    #icon_list img { transform: scale(0.5,0.5); }
+    #icon_list ul { justify-content: center; }
+    #icon_list ul li { width: calc(100%/4); }
+    #icon_list ul li a {opacity: 1; }
+    #icon_list ul li a p { font-size: 1rem; }
+}
+
+
+
+
+
+
+/* 실시간 추천숙소 */
+#time_rcm .inner { display: flex; justify-content: space-between; flex-wrap: wrap; }
+#time_rcm .rcm_text { width: 176px; }
+#time_rcm .rcm_text h2 { line-height: 1.2; }
+#time_rcm .rcm_text h2 span { font-size: 4.3rem; }
+#time_rcm .rcm_text p { font-size: 2rem; padding-bottom: 100px; }
+#time_rcm .rcm_text ul { padding-bottom: 20px; }
+#time_rcm .rcm_text ul li { font-size: 3rem; padding: 15px 5.254% 10px 0; border-bottom: 1px #999 solid; color: #999; transition: color 0.5s, border-bottom 0.5s; cursor: pointer; }
+
+#time_rcm .rcm_text ul li:hover { border-bottom: 1px #000 solid; color: #000; }
+#time_rcm .rcm_text ul li.active { border-bottom: 1px #000 solid; color: #000; }
+
+/* hotel */
+#time_rcm .rcm_hotel { width: calc((100% - 55px) - 176px); }
+#time_rcm .rcm_hotel ul li { border: #000 1px solid; position: relative; overflow: hidden; height: 559px; }
+#time_rcm .rcm_hotel ul li .rcm_list img, .rcm_pension ul li .rcm_list img { position: absolute; height: 462px; object-fit: cover; width: 100%; }
+
+#time_rcm .rcm_hotel ul li > img { position: absolute; z-index: 5; right: 20px; top: 20px; object-fit: cover; }
+#time_rcm .rcm_hotel ul li > img:nth-child(3) { position: absolute; z-index: 1; right: 20px; top: 20px; object-fit: cover; }
+#time_rcm .rcm_hotel ul li dl { position: absolute; width: 100%; padding: 0 20px; bottom: 0; border-top: #000 1px solid; height: 96px; }
+
+#time_rcm .rcm_hotel ul li dl dt { font-size: 2.2rem; padding-top: 15px; }
+#time_rcm .rcm_hotel ul li dl dd { font-size: 2.5rem; display: flex; justify-content: space-between; align-items: baseline; }
+#time_rcm .rcm_hotel ul li dl dd span { font-size: 1.8rem; }
+
+/* 펜션 */
+#time_rcm .rcm_pension { width: calc((100% - 55px) - 176px); }
+#time_rcm .rcm_pension ul li { border: #000 1px solid; position: relative; overflow: hidden; height: 559px; }
+#time_rcm .rcm_pension ul li .rcm_list img { position: absolute; height: 462px; object-fit: cover; width: 100%; }
+
+#time_rcm .rcm_pension ul li > img { position: absolute; z-index: 5; right: 20px; top: 20px; object-fit: cover; }
+#time_rcm .rcm_pension ul li > img:nth-child(3) { position: absolute; z-index: 1; right: 20px; top: 20px; object-fit: cover; }
+#time_rcm .rcm_pension ul li dl { position: absolute; width: 100%; padding: 0 20px; bottom: 0; border-top: #000 1px solid; height: 96px; }
+
+#time_rcm .rcm_pension ul li dl dt { font-size: 2.2rem; padding-top: 15px; }
+#time_rcm .rcm_pension ul li dl dd { font-size: 2.5rem; display: flex; justify-content: space-between; align-items: baseline; }
+#time_rcm .rcm_pension ul li dl dd span { font-size: 1.8rem; }
+
+
+#time_rcm .arrow { width: 66px; height: 66px; margin-top: -35px; }
+#time_rcm .arrow:after { display: none; }
+#time_rcm .prev { transition: background 0.5s; background: rgba(255,255,255,0.5) url('../img/main/png/arrow_l.png') no-repeat 20px center; right: 0; border-radius: 50%; border: 1px solid #000; }
+#time_rcm .next { transition: background 0.5s; background: rgba(255,255,255,0.5) url('../img/main/png/arrow_r.png') no-repeat 26px center; right: 10px; border-radius: 50%; border: 1px solid #000; }
+
+
+
+
+@media(max-width:1024px){
+    #time_rcm .rcm_text h2 span { font-size: 3rem; }
+    #time_rcm .rcm_text p { display: none; }
+    #time_rcm .rcm_text { width: 100%; }
+    #time_rcm .rcm_text ul li.active { border-bottom: 1px #fff solid; color: #000; }
+        #time_rcm .rcm_text ul { display: flex; width: 100%; }
+    #time_rcm .rcm_text ul li { font-size: 2rem; padding: 15px 5.254% 10px 0; border-bottom: 1px #fff solid; width: 100px; }
+    #time_rcm .rcm_text ul li:hover { border-bottom: 1px #fff solid; color: #000; }
+    #time_rcm .rcm_hotel { width: 100%; }
+    #time_rcm .rcm_hotel ul li dl dt { font-size: 2rem; }
+    #time_rcm .rcm_hotel ul li dl dd { font: 2rem; }
+    #time_rcm .rcm_hotel ul li dl dd span { font-size: 1.5rem; }
+    #time_rcm .rcm_pension { width: 100%; }
+    #time_rcm .rcm_pension ul li dl dt { font-size: 2rem; }
+    #time_rcm .rcm_pension ul li dl dd { font: 2rem; }
+    #time_rcm .rcm_pension ul li dl dd span { font-size: 1.5rem; }
+}
+
+
+
+
+
+
+
+
+
+
+#banner { text-align: center; }
+#banner h2 { padding-bottom: 100px; }
+
+#banner .banner1 { background: url('../img/main/banner_2-01.png') no-repeat center center; width: 100%; height: 400px;  padding: 70px;}
+#banner .banner2 { background: url('../img/main/banner_1-01.png') no-repeat center center; width: 100%; height: 400px;  padding: 70px;}
+
+#banner .swiper-button-next { color: #000; }
+#banner .swiper-button-prev { color: #000; }
+
+
+@media(max-width:1024px){
+    #banner h2 { padding-bottom: 180px; }
+}
+
+
+
+
+
+
+
+#spot { position: relative ; height: 1100px; }
+#spot .spot_tab { padding-bottom: 100px; width: 100%; text-align: center; }
+#spot .spot_tab li { padding: 10px 0; font-size: 3rem; color: #999; cursor: pointer; }
+#spot .spot_tab li:nth-of-type(1) { position: relative;}
+#spot .spot_tab li:nth-of-type(1):before { position: absolute; content: ''; display: block; width: 2px; height: 30px; background: #eee; top: 12px; left: 105%; }
+
+#spot .spot_tab li.active { color: #000;font-weight: 700; }
+
+#spot .spot_all { width: 100%; }
+#spot .spot_all div.active { display: block; }
+#spot .spot_all > div { display: none; }
+
+#spot .spot_slide { position: absolute; top: 200px; left: 0; width: 100%; }
+#spot .spot_slide li { height: 557px; }
+#spot .spot_slide li a { color: #fff; font-size: 5rem; font-family: 'SEBANG_Gothic_Bold',sans-serif; }
+#spot .spot_slide li div { transition: background 0.5s; display: inline-block; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+#spot .spot_slide li p { padding: 450px 0 0 50px; }
+
+
+/* 국내 */
+#spot .spot_slide li.swiper-slide-active { transform: scale(1,1); }
+#spot .spot_slide li.swiper-slide-active div { background: rgba(0,0,0,0);}
+#spot .spot_slide li { transition: transform 0.5s; transform: scale(0.8,0.8); }
+#spot .spot_slide .spot_seoul { background: url('../img/main/travel/korea/seoul/seoul_main.jpg') no-repeat center center; }
+#spot .spot_slide .spot_busan { background: url('../img/main/travel/korea/busan/busan_main.png') no-repeat center center; }
+#spot .spot_slide .spot_jeju { background: url('../img/main/travel/korea/jeju/jeju_main.jpg') no-repeat center center; }
+#spot .spot_slide .spot_gangneung { background: url('../img/main/travel/korea/gangneung/gangneung_main.jpg') no-repeat center center; }
+#spot .spot_slide .spot_gyeongju { background: url('../img/main/travel/korea/gyeongju/gyeongju_main.jpg') no-repeat center center; }
+#spot .spot_slide .spot_jeonju { background: url('../img/main/travel/korea/jeonju/jeonju_main.jpg') no-repeat center center; }
+
+#spot .arrow { width: 66px; height: 66px; margin-top: -35px; }
+#spot .arrow:after { display: none; }
+#spot .prev { transition: background 0.5s; background: rgba(255,255,255,0.5) url('../img/main/png/arrow_l.png') no-repeat 20px center; right: 0; border-radius: 50%; border: 1px solid #000; }
+#spot .next { transition: background 0.5s; background: rgba(255,255,255,0.5) url('../img/main/png/arrow_r.png') no-repeat 26px center; right: 10px; border-radius: 50%; border: 1px solid #000; }
+
+/* 아시아 */
+#spot .spot_asia { position: absolute; top: 200px; left: 0; width: 100%; }
+#spot .spot_asia li { height: 557px; background: #999;}
+#spot .spot_asia li a { color: #fff; font-size: 5rem; font-family: 'SEBANG_Gothic_Bold',sans-serif; }
+#spot .spot_asia li div { transition: background 0.5s; display: inline-block; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+#spot .spot_asia li p { padding: 450px 0 0 50px; }
+
+#spot .spot_asia li.swiper-slide-active { transform: scale(1,1); }
+#spot .spot_asia li.swiper-slide-active div { background: rgba(0,0,0,0);}
+#spot .spot_asia li { transition: transform 0.5s; transform: scale(0.8,0.8); }
+#spot .spot_asia .spot_danang { background: url('../img/main/travel/asia/danang/danang_main.png') no-repeat center center; background-size: cover; }
+#spot .spot_asia .spot_hongkong { background: url('../img/main/travel/asia/hongkong/hongkong_main.png') no-repeat center center; background-size: cover; }
+#spot .spot_asia .spot_nhatrang { background: url('../img/main/travel/asia/nhatrang/nhatrang_main.jpg') no-repeat center center; background-size: cover; }
+#spot .spot_asia .spot_osaka { background: url('../img/main/travel/asia/osaka/osaka_main.png') no-repeat center center; background-size: cover; }
+#spot .spot_asia .spot_sanghai { background: url('../img/main/travel/asia/sanghai/sanghai_main.png') no-repeat center center; background-size: cover; }
+#spot .spot_asia .spot_tokyo { background: url('../img/main/travel/asia/tokyo/tokyo_main.jpg') no-repeat center center; background-size: cover; }
+
+/* 유럽 */
+#spot .spot_europe { position: absolute; top: 200px; left: 0; width: 100%; }
+#spot .spot_europe li { height: 557px; background: #999;}
+#spot .spot_europe li a { color: #fff; font-size: 5rem; font-family: 'SEBANG_Gothic_Bold',sans-serif; }
+#spot .spot_europe li div { transition: background 0.5s; display: inline-block; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+#spot .spot_europe li p { padding: 450px 0 0 50px; }
+
+#spot .spot_europe li.swiper-slide-active { transform: scale(1,1); }
+#spot .spot_europe li.swiper-slide-active div { background: rgba(0,0,0,0);}
+#spot .spot_europe li { transition: transform 0.5s; transform: scale(0.8,0.8); }
+#spot .spot_europe .spot_heidelberg { background: url('../img/main/travel/europe/heidelberg/heidelberg_main.jpg') no-repeat center center; background-size: cover; }
+#spot .spot_europe .spot_paris { background: url('../img/main/travel/europe/paris/paris_main.png') no-repeat center center; background-size: cover; }
+#spot .spot_europe .spot_berlin { background: url('../img/main/travel/europe/berlin/berlin_main.png') no-repeat center center; background-size: cover; }
+#spot .spot_europe .spot_budapest { background: url('../img/main/travel/europe/budapest/budapest_main.png') no-repeat center center; background-size: cover; }
+#spot .spot_europe .spot_florence { background: url('../img/main/travel/europe/florence/florence_main.png') no-repeat center center; background-size: cover; }
+#spot .spot_europe .spot_venice { background: url('../img/main/travel/europe/venice/venice_main.png') no-repeat center center; background-size: cover; }
+
+
+/* 아메리카 */
+#spot .spot_america { position: absolute; top: 200px; left: 0; width: 100%; }
+#spot .spot_america li { height: 557px; background: #999;}
+#spot .spot_america li a { color: #fff; font-size: 5rem; font-family: 'SEBANG_Gothic_Bold',sans-serif; }
+#spot .spot_america li div { transition: background 0.5s; display: inline-block; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+#spot .spot_america li p { padding: 450px 0 0 50px; }
+
+#spot .spot_america li.swiper-slide-active { transform: scale(1,1); }
+#spot .spot_america li.swiper-slide-active div { background: rgba(0,0,0,0);}
+#spot .spot_america li { transition: transform 0.5s; transform: scale(0.8,0.8); }
+#spot .spot_america .spot_aires { background: url('../img/main/travel/america/aires/aires_main.jpg') no-repeat center center; background-size: cover; }
+#spot .spot_america .spot_medosa { background: url('../img/main/travel/america/mendoza/mendoza_main.jpg') no-repeat center center; background-size: cover; }
+#spot .spot_america .spot_paulo { background: url('../img/main/travel/america/paulo/paulo_main.png') no-repeat center center; background-size: cover; }
+#spot .spot_america .spot_salvador { background: url('../img/main/travel/america/salvador/salvador_main.png') no-repeat center center; background-size: cover; }
+#spot .spot_america .spot_toronto { background: url('../img/main/travel/america/toronto/toronto_main.jpg') no-repeat center center; background-size: cover; }
+#spot .spot_america .spot_vancouver { background: url('../img/main/travel/america/vancouver/vancouver_main.png') no-repeat center center; background-size: cover; }
+
+/* 중동 */
+#spot .spot_mideast { position: absolute; top: 200px; left: 0; width: 100%; }
+#spot .spot_mideast li { height: 557px; background: #999;}
+#spot .spot_mideast li a { color: #fff; font-size: 5rem; font-family: 'SEBANG_Gothic_Bold',sans-serif; }
+#spot .spot_mideast li div { transition: background 0.5s; display: inline-block; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+#spot .spot_mideast li p { padding: 450px 0 0 50px; }
+
+#spot .spot_mideast li.swiper-slide-active { transform: scale(1,1); }
+#spot .spot_mideast li.swiper-slide-active div { background: rgba(0,0,0,0);}
+#spot .spot_mideast li { transition: transform 0.5s; transform: scale(0.8,0.8); }
+#spot .spot_mideast .spot_abu { background: url('../img/main/travel/mideast/abu/abu_main.jpg') no-repeat center center; background-size: cover; }
+#spot .spot_mideast .spot_cairo { background: url('../img/main/travel/mideast/cairo/cairo_main.jpg') no-repeat center center; background-size: cover; }
+#spot .spot_mideast .spot_dubai { background: url('../img/main/travel/mideast/dubai/dubai_main.jpg') no-repeat center center; background-size: cover; }
+#spot .spot_mideast .spot_muscat { background: url('../img/main/travel/mideast/muscat/muscat_main.jpg') no-repeat center center; background-size: cover; }
+#spot .spot_mideast .spot_sharm { background: url('../img/main/travel/mideast/sharm/sharm_main.jpg') no-repeat center center; background-size: cover; }
+#spot .spot_mideast .spot_sla { background: url('../img/main/travel/mideast/sla/sla_main.png') no-repeat center center; background-size: cover; }
+
+
+@media(max-width:1024px){
+    #spot { height: 800px; }
+    #spot .spot_tab li { font-size: 2rem;  }
+    #spot .spot_slide { top: 150px; }
+    #spot .spot_slide li { height: 400px; }
+    #spot .spot_slide li p { padding: 320px 0 0 40px; font-size: 4rem; }
+
+    #spot .spot_asia { top: 150px; }
+    #spot .spot_asia { height: 400px; }
+    #spot .spot_asia li p { padding: 320px 0 0 40px; font-size: 4rem; }
+
+    #spot .spot_europe { top: 150px; }
+    #spot .spot_europe { height: 400px; }
+    #spot .spot_europe li p { padding: 320px 0 0 40px; font-size: 4rem; }
+
+    #spot .spot_america { top: 150px; }
+    #spot .spot_america { height: 400px; }
+    #spot .spot_america li p { padding: 320px 0 0 40px; font-size: 4rem; }
+
+    #spot .spot_mideast { top: 150px; }
+    #spot .spot_mideast { height: 400px; }
+    #spot .spot_mideast li p { padding: 320px 0 0 40px; font-size: 4rem; }
+}
+
+@media(max-width:786px){
+    #spot .spot_tab li { font-size: 1.8rem;  }
+    #spot .spot_slide li { height: 350px; }
+    #spot .spot_slide li p { padding: 270px 0 0 30px; font-size: 3.5rem; }
+
+    #spot .spot_asia li { height: 350px; }
+    #spot .spot_asia li p { padding: 270px 0 0 30px; font-size: 3.5rem; }
+
+    #spot .spot_europe li { height: 350px; }
+    #spot .spot_europe li p { padding: 270px 0 0 30px; font-size: 3.5rem; }
+
+    #spot .spot_america li { height: 350px; }
+    #spot .spot_america li p { padding: 270px 0 0 30px; font-size: 3.5rem; }
+
+    #spot .spot_mideast li { height: 350px; }
+    #spot .spot_mideast li p { padding: 270px 0 0 30px; font-size: 3.5rem; }
+
+    #spot .spot_tab li:nth-of-type(1):before { top: 10px; left: 120%; height: 20px; }
+}
+
+
+
+#agoda_homes { padding: 200px 0; background: rgba(179, 65, 65, 0.12);; }
+#agoda_homes .inner { display: flex; justify-content: space-between; flex-wrap: wrap; }
+
+#agoda_homes .homes_banner { width: calc((100% - 55px)/2); height: 840px; }
+#agoda_homes .homes_banner .homes_slide { height: 100%; text-align: center; }
+#agoda_homes .homes_banner h2 { font-size: 8rem; padding-top: 100px; }
+#agoda_homes .homes_banner p { font-size: 3rem; padding-bottom: 400px; }
+#agoda_homes .homes_banner a { display: inline-block; padding: 13px 50px 10px; background: #000; font-size: 2rem; color: #fff; }
+
+#agoda_homes .homes_banner .homes_slide .homes1 { background: url('../img/main/homes1.jpg') no-repeat center center; background-size: cover; }
+#agoda_homes .homes_banner .homes_slide .homes2 { background: url('../img/main/homes2.jpg') no-repeat center center; background-size: cover; }
+
+#agoda_homes .homes_part { width: calc((100% - 55px)/2); height: 840px; }
+#agoda_homes .homes_part .part1 { display: flex; justify-content: space-between; height: calc((100% - 20px)/2); margin-bottom: 20px; }
+#agoda_homes .homes_part .part2 { display: flex; justify-content: space-between; height: calc((100% - 20px)/2); }
+#agoda_homes .homes_part ul li { width: calc((100% - 20px)/2); }
+
+#agoda_homes .homes_part .part1 li:nth-of-type(1) { background: url('../img/main/homes_apart.jpg') no-repeat center center; background-size: cover; }
+#agoda_homes .homes_part .part1 li:nth-of-type(2) { background: url('../img/main/homes_holiday.jpg') no-repeat center center; background-size: cover; }
+#agoda_homes .homes_part .part2 li:nth-of-type(1) { background: url('../img/main/homes_privit.jpg') no-repeat center center; background-size: cover; }
+#agoda_homes .homes_part .part2 li:nth-of-type(2) { background: url('../img/main/homes_banglalo.jpg') no-repeat center center; background-size: cover; }
+
+#agoda_homes .homes_part p { padding: 10px 10px 5px; background: #fff; margin-top: 371px; }
+
+
+
+
+@media(max-width:1400px){
+    #agoda_homes .homes_banner h2 { font-size: 7.5rem; }
+    #agoda_homes .homes_banner p { font-size: 2.5rem;  }
+    
+}
+
+@media(max-width:1200px){
+    #agoda_homes .homes_banner h2 { font-size: 5rem; }
+    #agoda_homes .homes_banner p { font-size: 1.8rem; padding-bottom: 300px;  }
+    #agoda_homes .homes_banner { width: 100%; margin-bottom: 40px; height: 640px; }
+    #agoda_homes .homes_part { width: 100%; height: 640px; }
+    #agoda_homes .homes_part p { margin-top: 271px; }
+}
+
+
+
+
+
+#cs { padding: 250px 0; }
+#cs .inner { position: relative; display: flex; flex-wrap: wrap; }
+#cs .inner div { width: calc(100%/2); }
+#cs .inner .traffic { padding: 0; }
+#cs .inner div h2 { padding-left: 100px; }
+#cs .inner div ul li { padding-left: 200px;}
+#cs .inner div ul li a { display: inline-block; padding: 20px 100px 20px 0; font-size: 3rem; background: url(../img/main/png/icon_cs_arrow.png) no-repeat 100% 25px; opacity: 0.5; transition: padding 0.3s; }
+
+.cs_text { padding: 20px 0 20px 200px; font-size: 3rem; }
+
+#cs .inner div ul li a:hover { opacity: 1; padding: 20px 120px 20px 0; }
+#cs .inner:before { position: absolute; content: ''; display: block; clear: both; left: 45%; top: 10px; background: #000; width: 1px; height: 400px; }
+
+
+
+
+@media(max-width:1400px){
+    #cs .inner div ul li { padding-left: 150px;}
+    #cs .inner div ul li a { display: inline-block; padding: 20px 100px 20px 0; font-size: 2rem; background: url(../img/main/png/icon_cs_arrow.png) no-repeat 100% 25px; opacity: 0.5; transition: padding 0.3s; }
+    .cs_text { font-size: 2rem; }
+}
+
+@media(max-width:1024px){
+    #cs .inner div { width: 100%; }
+    #cs .inner .traffic { padding-bottom: 100px; }
+    #cs .inner:before { position: absolute; content: ''; display: block; clear: both; left: 0; top: 42%; background: #000; width: 100%; height: 1px; }
+    #cs { padding: 150px 0; }
+}
+
+
+
+
+#footer { border-top: #000 1px solid; }
+#footer .inner { padding: 55px 20.493%; text-align: center; font-size: 1.8rem; color: #9C6679; }
+#footer .inner .footer_top { display: flex; justify-content: space-between; flex-wrap: wrap; }
+#footer .inner .footer_top .footer_logo img { display: block; }
+#footer .inner .footer_top ul { display: flex; justify-content: space-between; }
+#footer .inner .footer_top ul li { padding: 10px 40px 0; }
+#footer .inner .footer_top ul li a { color: #9C6679; }
+
+#footer .inner p { padding: 35px 0;}
+
+#footer .inner .partner_logo { display: flex; justify-content: space-between; flex-wrap: wrap; }
+#footer .inner .partner_logo img { display: block; }
+
+
+@media(max-width:1800px){
+    #footer .inner { padding: 55px 100px; }
+    #footer .inner .footer_top ul { width: 100%; }
+    #footer .inner .footer_top { justify-content: center; }
+    #footer .inner .footer_top ul li a { color: #9C6679; }
+    #footer .inner .footer_top .footer_logo img { display: block; padding-bottom: 20px; }
+}
+
+@media(max-width:1200px){
+    #footer .inner { padding: 55px 50px; }
+    #footer .inner .footer_top ul li a { color: #9C6679; font-size: 1.5rem; }
+    #footer .inner p { font-size: 1.5rem; }
+    #footer .inner .partner_logo img { transform: scale(0.7,0.7); }
+    #footer .inner .footer_top ul li { padding: 10px 0 0; }
+}
+
+@media(max-width:1024px){
+    #footer .inner { padding: 55px 0  100px; }
+    #footer .inner .partner_logo li { width: calc(100%/3); }
+}
+
+
+
+#wrap .mb_quick { display: none; }
+#wrap .mb_quick .inner { max-width: calc(100% - 100px); }
+#wrap .mb_quick .quick_icon { height: 65px; width: 100%; display: flex; justify-content: space-around; position: fixed; left: 0; bottom: 0; z-index: 9999; background: #fff; border-top: 1px solid #000; align-items: center; }
+#wrap .mb_quick .quick_icon img { display: block; }
+
+@media(max-width:1024px){
+    #wrap .mb_quick {display: block;}
+}

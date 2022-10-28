@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agoda Homes</title>
+
+    <!-- 오픈그래프 -->
+    <meta property="og:title" content="아고다">
+    <meta property="og:url" content="http://test.dothome.co.kr">
+    <meta property="og:description" content="가장 빠른 여행 사이트, 아고다">
+    <meta property="og:image" content="../img/main/opengragh.jpg">
+
+    <!-- 파비콘 -->
+    <link href="../img/main/favicon.ico" rel="shortcut icon">
+
+    <!-- font -->
+    <link href="../css/font.css" rel="stylesheet">
+
+
+    <!-- css -->
+    <link href="../css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="../css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../css/travel_mendosa.css" rel="stylesheet">
+
+    <!-- js -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1><a href="../index.html"><img src="../img/main/png/agoda_logo_white.png" alt="아고다 로고"></a></h1>
+
+                <nav>
+                    <ul class="gnb clearfix">
+                        <li>도시별
+                            <div class="depth2">
+                                <div></div>
+
+                                <ul class="asia">
+                                    <h3>아시아</h3>
+                                    <li><a href="city_seoul.html">서울</a></li>
+                                    <li><a href="city_busan.html">부산</a></li>
+                                    <li><a href="city_gangneung.html">강릉</a></li>
+                                    <li><a href="city_gyeongju.html">경주</a></li>
+                                    <li><a href="city_jeju.html">제주</a></li>
+                                    <li><a href="city_jeonju.html">전주</a></li>
+                                    <li><a href="city_tokyo.html">도쿄</a></li>
+                                    <li><a href="city_osaka.html">오사카</a></li>
+                                    <li><a href="city_sanghai.html">상하이</a></li>
+                                    <li><a href="city_hongkong.html">홍콩</a></li>
+                                    <li><a href="city_nhatrang.html">나트랑</a></li>
+                                    <li><a href="city_danang.html">다낭</a></li>
+                                </ul>
+
+                                <ul class="europe">
+                                    <h3>유럽</h3>
+                                    <li><a href="city_florence.html">피렌체</a></li>
+                                    <li><a href="city_venice.html">베네치아</a></li>
+                                    <li><a href="city_paris.html">파리</a></li>
+                                    <li><a href="city_berlin.html">베를린</a></li>
+                                    <li><a href="city_heidelberg.html">하이델베르크</a></li>
+                                    <li><a href="city_budapest.html">부다페스트</a></li>
+                                </ul>
+
+                                <ul class="ameria">
+                                    <h3>아메리카</h3>
+                                    <li><a href="city_salvador.html">살바도르</a></li>
+                                    <li><a href="city_paulo.html">상파울루</a></li>
+                                    <li><a href="city_toronto.html">토론토</a></li>
+                                    <li><a href="city_vancouver.html">밴쿠버</a></li>
+                                    <li><a href="city_aires.html">부에노스아이레스</a></li>
+                                    <li><a href="city_mendoza.html">멘도사</a></li>
+                                </ul>
+
+                                <ul class="mideast">
+                                    <h3>중동</h3>
+                                    <li><a href="city_dubai.html">두바이</a></li>
+                                    <li><a href="city_abu.html">아부다비</a></li>
+                                    <li><a href="city_muscat.html">무스카트</a></li>
+                                    <li><a href="city_sla.html">살랄라</a></li>
+                                    <li><a href="city_cairo.html">카이로</a></li>
+                                    <li><a href="city_sharm.html">샤름엘셰이크</a></li>
+                                </ul>
+                            </div><!-- depth2 -->
+                        </li>
+
+                        <li>국가별
+
+                            <div class="depth2">
+                                <div></div>
+
+                                <ul class="asia">
+                                    <h3>아시아</h3>
+                                    <li><a href="state_kr.html">한국</a></li>
+                                    <li><a href="state_jp.html">일본</a></li>
+                                    <li><a href="state_cn.html">중국</a></li>
+                                    <li><a href="state_vn.html">베트남</a></li>
+                                </ul>
+
+                                <ul class="europe">
+                                    <h3>유럽</h3>
+                                    <li><a href="state_italy.html">이탈리아</a></li>
+                                    <li><a href="state_france.html">프랑스</a></li>
+                                    <li><a href="state_germany.html">독일</a></li>
+                                    <li><a href="state_hungary.html">헝가리</a></li>
+                                </ul>
+
+                                <ul class="ameria">
+                                    <h3>아메리카</h3>
+                                    <li><a href="state_brazil.html">브라질</a></li>
+                                    <li><a href="state_canada.html">캐나다</a></li>
+                                    <li><a href="state_argentima.html">아르헨티나</a></li>
+                                </ul>
+
+                                <ul class="mideast">
+                                    <h3>중동</h3>
+                                    <li><a href="state_arab.html">아랍에미리트</a></li>
+                                    <li><a href="oman.html">오만</a></li>
+                                    <li><a href="egypt.html">이집트</a></li>
+                                </ul>
+                            </div><!-- depth2 -->
+                        </li>
+
+                        <li>agoda Homes
+                            <div class="depth2">
+                                <div></div>
+
+                                <ul class="apart">
+                                    <h3>아파트먼트</h3>
+                                    <li><a href="apart_bangkok.html">방콕 아파트먼트</a></li>
+                                    <li><a href="apart_manila.html">마닐라 아파트먼트</a></li>
+                                    <li><a href="apart_osaka.html">오사카 아파트먼트</a></li>
+                                    <li><a href="apart_tokyo.html">도쿄 아파트먼트</a></li>
+                                </ul>
+
+                                <ul class="holiday">
+                                    <h3>홀리데이 하우스</h3>
+                                    <li><a href="holiday_jeju.html">제주도 홀리데이 하우스</a></li>
+                                    <li><a href="holiday_okinawa.html">오키나와 홀리데이 하우스</a></li>
+                                    <li><a href="holiday_tokyo.html">도쿄 홀리데이 하우스</a></li>
+                                    <li><a href="holiday_bangkok.html">방콕 홀리데이 하우스</a></li>
+                                </ul>
+
+                                <ul class="privit">
+                                    <h3>프라이빗 빌라</h3>
+                                    <li><a href="privit_bali.html">발리 프라이빗 빌라</a></li>
+                                    <li><a href="privit_phuket.html">푸켓 프라이빗 빌라</a></li>
+                                </ul>
+
+                                <ul class="bangalo">
+                                    <h3>방갈로</h3>
+                                    <li><a href="bangalo_bali.html">발리 방갈로</a></li>
+                                </ul>
+                            </div><!-- depth2 -->
+                        </li>
+
+                        <li>교통
+                            <div class="depth2">
+                                <div></div>
+
+                                <h3><a href="station.html">공항 이동 교통편</a></h3>
+                                <h3><a href="lentarcar.html">렌터카</a></h3>
+                            </div>
+                        </li>
+
+                        <li>장기투숙
+                            <div class="depth2">
+                                <div></div>
+
+                                <h3><a href="long.html">장기투숙</a></h3>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="util">
+                    <li><a href="log_in.html">로그인</a></li>
+                    <li><a href="member.html">회원가입</a></li>
+                </ul>
+
+                <div class="mb_ham">
+                    <img src="../img/main/png/icon_mb_ham_wh.png" alt="모바일메뉴">
+                </div>
+            </div><!-- inner -->
+
+            <div class="depth2_bg"></div>
+
+
+            <div class="mgnb_wrap">
+                <div class="mgnb">
+                    <div class="mgnb_close"></div>
+
+                    <div class="mgnb_util">
+                        <ul>
+                            <li><a href="log_in.html">로그인</a></li>
+                            <li><a href="member.html">회원가입</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="mgnb_list">
+                        <li>도시별
+                            <ul class="asia">
+                                <h3>아시아</h3>
+                                <li><a href="city_seoul.html">서울</a></li>
+                                <li><a href="city_busan.html">부산</a></li>
+                                <li><a href="city_gangneung.html">강릉</a></li>
+                                <li><a href="city_gyeongju.html">경주</a></li>
+                                <li><a href="city_jeju.html">제주</a></li>
+                                <li><a href="city_jeonju.html">전주</a></li>
+                                <li><a href="city_tokyo.html">도쿄</a></li>
+                                <li><a href="city_osaka.html">오사카</a></li>
+                                <li><a href="city_sanghai.html">상하이</a></li>
+                                <li><a href="city_hongkong.html">홍콩</a></li>
+                                <li><a href="city_nhatrang.html">나트랑</a></li>
+                                <li><a href="city_danang.html">다낭</a></li>
+                            </ul>
+
+                            <ul class="europe">
+                                <h3>유럽</h3>
+                                <li><a href="city_florence.html">피렌체</a></li>
+                                <li><a href="city_venice.html">베네치아</a></li>
+                                <li><a href="city_paris.html">파리</a></li>
+                                <li><a href="city_berlin.html">베를린</a></li>
+                                <li><a href="city_heidelberg.html">하이델베르크</a></li>
+                                <li><a href="city_budapest.html">부다페스트</a></li>
+                            </ul>
+
+                            <ul class="ameria">
+                                <h3>아메리카</h3>
+                                <li><a href="city_salvador.html">살바도르</a></li>
+                                <li><a href="city_paulo.html">상파울루</a></li>
+                                <li><a href="city_toronto.html">토론토</a></li>
+                                <li><a href="city_vancouver.html">밴쿠버</a></li>
+                                <li><a href="city_aires.html">부에노스아이레스</a></li>
+                                <li><a href="city_mendoza.html">멘도사</a></li>
+                            </ul>
+
+                            <ul class="mideast">
+                                <h3>중동</h3>
+                                <li><a href="city_dubai.html">두바이</a></li>
+                                <li><a href="city_abu.html">아부다비</a></li>
+                                <li><a href="city_muscat.html">무스카트</a></li>
+                                <li><a href="city_sla.html">살랄라</a></li>
+                                <li><a href="city_cairo.html">카이로</a></li>
+                                <li><a href="city_sharm.html">샤름엘셰이크</a></li>
+                            </ul>
+                        </li>
+
+                        <li>국가별
+                            <ul class="asia">
+                                <h3>아시아</h3>
+                                <li><a href="state_kr.html">한국</a></li>
+                                <li><a href="state_jp.html">일본</a></li>
+                                <li><a href="state_cn.html">중국</a></li>
+                                <li><a href="state_vn.html">베트남</a></li>
+                            </ul>
+
+                            <ul class="europe">
+                                <h3>유럽</h3>
+                                <li><a href="state_italy.html">이탈리아</a></li>
+                                <li><a href="state_france.html">프랑스</a></li>
+                                <li><a href="state_germany.html">독일</a></li>
+                                <li><a href="state_hungary.html">헝가리</a></li>
+                            </ul>
+
+                            <ul class="ameria">
+                                <h3>아메리카</h3>
+                                <li><a href="state_brazil.html">브라질</a></li>
+                                <li><a href="state_canada.html">캐나다</a></li>
+                                <li><a href="state_argentima.html">아르헨티나</a></li>
+                            </ul>
+
+                            <ul class="mideast">
+                                <h3>중동</h3>
+                                <li><a href="state_arab.html">아랍에미리트</a></li>
+                                <li><a href="oman.html">오만</a></li>
+                                <li><a href="egypt.html">이집트</a></li>
+                            </ul>
+                        </li>
+
+                        <li>agoda Homes
+                            <ul class="apart">
+                                <h3>아파트먼트</h3>
+                                <li><a href="apart_bangkok.html">방콕 아파트먼트</a></li>
+                                <li><a href="apart_manila.html">마닐라 아파트먼트</a></li>
+                                <li><a href="apart_osaka.html">오사카 아파트먼트</a></li>
+                                <li><a href="apart_tokyo.html">도쿄 아파트먼트</a></li>
+                            </ul>
+
+                            <ul class="holiday">
+                                <h3>홀리데이 하우스</h3>
+                                <li><a href="holiday_jeju.html">제주도 홀리데이 하우스</a></li>
+                                <li><a href="holiday_okinawa.html">오키나와 홀리데이 하우스</a></li>
+                                <li><a href="holiday_tokyo.html">도쿄 홀리데이 하우스</a></li>
+                                <li><a href="holiday_bangkok.html">방콕 홀리데이 하우스</a></li>
+                            </ul>
+
+                            <ul class="privit">
+                                <h3>프라이빗 빌라</h3>
+                                <li><a href="privit_bali.html">발리 프라이빗 빌라</a></li>
+                                <li><a href="privit_phuket.html">푸켓 프라이빗 빌라</a></li>
+                            </ul>
+
+                            <ul class="bangalo">
+                                <h3>방갈로</h3>
+                                <li><a href="bangalo_bali.html">발리 방갈로</a></li>
+                            </ul>
+                        </li>
+
+                        <li>교통
+                            <ul class="traffic">
+                                <li><a href="traffic.html">공항 이동 교통편</a></li>
+                                <li><a href="lentarcar.html">렌터카</a></li>
+                            </ul>
+                        </li>
+
+                        <li>장기투숙
+                            <ul class="long">
+                                <li><a href="long.html">장기투숙</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- mgnb -->
+            </div><!-- mgnb_wrap -->
+        </header>
+
+        <main id="main">
+            <div class="travel_title">
+                <h2>멘도사</h2>
+                <p>와인 향이 머무는 도시</p>
+            </div><!-- title -->
+
+            <section id="act_desc">
+                <div class="inner_s">
+                    <div class="act_info">
+                        <img src="../img/main/travel/america/mendoza/mendoza_act1_w665.png" alt="아콩카과 산">
+                        <div class="desc">
+                            <h3>아콩카과 산</h3>
+                            <p class="text">아콩카과산 또는 아콩카구아산은 아르헨티나 서쪽 멘도사주에 위치한 거대한 바위 덩어리로 이루어진 산입니다. 안데스산맥의 최고봉으로써 남아메리카 대륙에서 가장 높으며, 아시아를 제외한 모든 대륙의 산 중에서 가장 높답니다. 덕분에  ‘흰 파수꾼’, ‘바위 파수꾼’이라는 의미의 이름이 붙었죠.<br>
+                                매년 맨도사에는 이 아콩카과 산을 오르려는 사람들이 모여들고있답니다.</p>
+                            <p class="tag">
+                                #멘도사여행#멘도사가볼만한곳#멘도사명소#바위산#아콩카과 산#포토스폿#인생샷#친구와함께#연인과함께#아이와함께#가족여행#이달의멘도사여행
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="act_info">
+                        <div class="desc">
+                            <h3 class="text_r">헤네랄 산 마르틴 공원</h3>
+                            <p class="text">멘도사 중심부에 인접한 헤네랄 산마르틴 공원은 호수와 잔디밭이 있는 평화로운 공원입니다. 서로 얽혀 있는 산책로와 자전거 도로는 동물원, 풋볼 경기장과 도시 전망대를 비롯한 도시의 여러 명소와 연결되어 있습니다. 이 공원의 이름은 스페인으로부터의 독립을 위한 아르헨티나의 투쟁을 성공적으로 이끈 장군의 이름을 따 왔답니다. <br>
+                                공원 안에는 차량 출입이 가능하지만 도보나 자전거로 둘러보는 것이 가장 좋습니다. 안내판이 충분히 설치되어 있지 않으니 공원 지도를 꼭 챙기세요. 공원의 언덕 꼭대기로 향하는 산책로에서는 도시의 아름다운 경관을 내려다볼 수도 있답니다.<br>
+                                이곳에서 가족과 함께 오후를 보내며 도시의 한적한 분위기를 만끽해 보세요.</p>
+                            <p class="tag">
+                                #멘도사여행#멘도사가볼만한곳#멘도사명소#공원#헤네랄 산 마르틴 공원#멘도사데이트코스#포토스폿#인생샷#친구와함께#연인과함께#아이와함께#가족여행#이달의멘도사여행
+                            </p>
+                        </div>
+                        <img src="../img/main/travel/america/mendoza/mendoza_act2_w665.png" alt="헤네랄 산 마르틴 공원">
+                    </div>
+
+                    <div class="act_info">
+                        <img src="../img/main/travel/america/mendoza/mendoza_act3_w665.png" alt="와인 양조장">
+                        <div class="desc">
+                            <h3>와인 양조장</h3>
+                            <p class="text">멘도사에서 유명하다고 하면 와인과 올리브를 빼놓을 수 없겠죠? 아르헨티나 와인의 65%는 이 곳, 멘도사에서 생산된다고 합니다. 덕분에 곳곳에서 포도 농장과 양조장을 볼 수 있답니다.<br>
+                                이런 양조장에서는 포도밭 가꾸기, 양조장 체험 등 와인과 관련된 다양한 체험을 할 수 있답니다. 인터넷으로 예약하면 훨씬 편하니, 관심 있으시다면 놓치지 마세요!
+                            </p>
+                            <p class="tag">
+                                #멘도사여행#멘도사가볼만한곳#멘도사명소#와인#와인 양조장#포토스폿#인생샷#친구와함께#연인과함께#아이와함께#가족여행#이달의멘도사여행
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- inner -->
+            </section>
+
+            <section id="travel_link">
+                <div class="inner_s">
+                    <div class="link_l">
+                        <a href="city_seoul.html">숙소 예약하기</a>
+                    </div><!-- left -->
+                    <div class="link_bg"></div>
+                    <div class="link_r">
+                        <a href="act_busan.html">액티비티 예약하기</a>
+                    </div>
+                </div><!-- inner -->
+            </section>
+
+            <section id="travel_act">
+                <div class="inner_100">
+                    <h2>멘도사 추천 액티비티</h2>
+                    <div class="swiper act_slide" dir="rtl">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <p>아콩카과 산</p>
+                                <img src="../img/main/travel/america/mendoza/mendoza_act1_w665.png" alt="아콩카과 산">
+                            </li>
+                            <li class="swiper-slide">
+                                <p>헤네랄 산 마르틴 공원</p>
+                                <img src="../img/main/travel/america/mendoza/mendoza_act2_w665.png" alt="헤네랄 산 마르틴 공원">
+                            </li>
+                            <li class="swiper-slide">
+                                <p>와인 양조장</p>
+                                <img src="../img/main/travel/america/mendoza/mendoza_act3_w665.png" alt="와인 양조장">
+                            </li>                            
+                            <li class="swiper-slide">
+                                <p>멘도사 강</p>
+                                <img src="../img/main/travel/america/mendoza/mendoza_act4.jpg" alt="멘도사 강">
+                            </li>
+                            <li class="swiper-slide">
+                                <p>멘도사 경마장</p>
+                                <img src="../img/main/travel/america/mendoza/mendoza_act5.jpg" alt="멘도사 경마장">
+                            </li>
+                            <li class="swiper-slide">
+                                <p>플라자</p>
+                                <img src="../img/main/travel/america/mendoza/mendoza_act6.jpg" alt="플라자">
+                            </li>
+                            <li class="swiper-slide">
+                                <p>영광의 언덕</p>
+                                <img src="../img/main/travel/america/mendoza/mendoza_act7.jpg" alt="영광의 언덕">
+                            </li>
+                            <li class="swiper-slide">
+                                <p>산 마르틴 교회</p>
+                                <img src="../img/main/travel/america/mendoza/mendoza_act8.jpg" alt="산 마르틴 교회">
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="travel_hotel">
+                <div class="inner_100">
+                    <h2>부에노스아이레스 추천 숙소</h2>
+
+                    <div class="swiper hotel_slide">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="hotel1_seoul.html.html">
+                                    <div class="rcm_list">
+                                        <img src="../img/main/seoul_hotel1_main.jpg" alt="호텔1">
+                                        <dl>
+                                            <dt>오라카이 청계산 호텔</dt>
+                                            <dd><span>9.7 (218,321)</span>&#92;78,000</dd>
+                                        </dl>
+                                    </div>
+                                </a>
+
+                                <img src="../img/main/png/icon_cart1.png">
+                                <img src="../img/main/png/icon_cart2.png">
+
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a href="hotel2_seoul.html">
+                                    <div class="rcm_list">
+                                        <img src="../img/main/seoul_hotel2_main.jpg" alt="호텔1">
+                                        <dl>
+                                            <dt>나인트리 프리미어 호텔 인사동</dt>
+                                            <dd><span>9.8 (218,321)</span>&#92;97,000</dd>
+                                        </dl>
+                                    </div>
+                                </a>
+
+                                <img src="../img/main/png/icon_cart1.png">
+                                <img src="../img/main/png/icon_cart2.png">
+
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a href="hotel3_seoul.html">
+                                    <div class="rcm_list">
+                                        <img src="../img/sub/asia/kr/seoul/hotel3/seoul_hotel3_main.jpg"
+                                            alt="벨류하이엔드 호텔 수원">
+                                        <dl>
+                                            <dt>벨류하이엔드호텔 수원</dt>
+                                            <dd><span>9.7 (218,321)</span>&#92;78,000</dd>
+                                        </dl>
+                                    </div>
+                                </a>
+
+                                <img src="../img/main/png/icon_cart1.png">
+                                <img src="../img/main/png/icon_cart2.png">
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a href="hotel4_seoul.html">
+                                    <div class="rcm_list">
+                                        <img src="../img/sub/asia/kr/seoul/hotel4/seoul_hotel1_main1.jpg"
+                                            alt="오라카이 인사동 호텔">
+                                        <dl>
+                                            <dt>오라카이 인사동 호텔</dt>
+                                            <dd><span>9.7 (218,321)</span>&#92;78,000</dd>
+                                        </dl>
+                                    </div>
+                                </a>
+
+                                <img src="../img/main/png/icon_cart1.png">
+                                <img src="../img/main/png/icon_cart2.png">
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a href="hotel5_seoul.html">
+                                    <div class="rcm_list">
+                                        <img src="../img/sub/asia/kr/seoul/hotel5/hotel5_seoul_main.jpg"
+                                            alt="호텔 미드시티 명동">
+                                        <dl>
+                                            <dt>호텔 미드시티 명동</dt>
+                                            <dd><span>10 (4,552)</span>&#92;102,494</dd>
+                                        </dl>
+                                    </div>
+                                </a>
+
+                                <img src="../img/main/png/icon_cart1.png">
+                                <img src="../img/main/png/icon_cart2.png">
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a href="hotel6_seoul.html">
+                                    <div class="rcm_list">
+                                        <img src="../img/sub/asia/kr/seoul/hotel6/hotel6_seoul_main.jpg"
+                                            alt="호텔 스카이파크 동대문 1호점">
+                                        <dl>
+                                            <dt>호텔 스카이파크 동대문 1호점</dt>
+                                            <dd><span>8 (41,550)</span>&#92;78,000</dd>
+                                        </dl>
+                                    </div>
+                                </a>
+
+                                <img src="../img/main/png/icon_cart1.png">
+                                <img src="../img/main/png/icon_cart2.png">
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a href="hotel7_seoul.html">
+                                    <div class="rcm_list">
+                                        <img src="../img/sub/asia/kr/seoul/hotel7/hotel7_soeul_main.jpg"
+                                            alt="인터컨티넨탈 그랜드 서울 파르나스">
+                                        <dl>
+                                            <dt>인터컨티넨탈 그랜드 서울 파르나스</dt>
+                                            <dd><span>9 (1,651)</span>&#92;558,000</dd>
+                                        </dl>
+                                    </div>
+                                </a>
+
+                                <img src="../img/main/png/icon_cart1.png">
+                                <img src="../img/main/png/icon_cart2.png">
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a href="hotel8_seoul.html">
+                                    <div class="rcm_list">
+                                        <img src="../img/sub/asia/kr/seoul/hotel8/hotel8_soeul_main.jpg" alt="콘래드 서울">
+                                        <dl>
+                                            <dt>콘래드 서울</dt>
+                                            <dd><span>9 (2,552)</span>&#92;366,000</dd>
+                                        </dl>
+                                    </div>
+                                </a>
+
+                                <img src="../img/main/png/icon_cart1.png">
+                                <img src="../img/main/png/icon_cart2.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- inner -->
+            </section>
+        </main>
+
+
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer_top">
+                    <div class="footer_logo">
+                        <img src="../img/main/png/agoda_logo.png" alt="아고다 로고">
+                    </div><!-- logo -->
+
+                    <ul class="footer_list">
+                        <li><a href="cs.html">개인정보처리방침</a></li>
+                        <li><a href="cs.html">이용약관</a></li>
+                        <li><a href="cs.html">회사소개</a></li>
+                        <li><a href="cs.html">파트너</a></li>
+                        <li><a href="../index.html">모바일</a></li>
+                    </ul>
+                </div><!-- footer_top -->
+
+                <p class="copy">All material herein &copy; 2005 – 2022 Agoda Company Pte. Ltd., All Rights Reserved.<br>
+                    아고다는 온라인 여행 및 관련 서비스 분야의 세계적인 선도 기업인 Booking Holdings Inc.의 일부입니다.
+                </p>
+
+                <ul class="partner_logo">
+                    <li>
+                        <img src="../img/main/png/footer_agoda.png" alt="아고다 로고">
+                    </li>
+
+                    <li>
+                        <img src="../img/main/png/footer_rental.png" alt="파트너사 렌터카">
+                    </li>
+
+                    <li>
+                        <img src="../img/main/png/footer_booking.png" alt="파트너사 부킹">
+                    </li>
+
+                    <li>
+                        <img src="../img/main/png/footer_kayak.png" alt="파트너사 카약">
+                    </li>
+
+                    <li>
+                        <img src="../img/main/png/footer_open.png" alt="파트너사 오픈테이블">
+                    </li>
+
+                    <li>
+                        <img src="../img/main/png/footer_price.png" alt="파트너사 프라이스라인">
+                    </li>
+                </ul>
+            </div><!-- inner -->
+        </footer>
+
+        <div class="mb_quick">
+            <div class="inner">
+                <ul class="quick_icon">
+                    <li><a href="cs.html">
+                            <img src="../img/main/png/quick_cs.png" alt="고객센터">
+                        </a></li>
+                    <li><a href="../index.html">
+                            <img src="../img/main/png/quick_logo.png" alt="홈으로">
+                        </a></li>
+                    <li><a href="log_in.html">
+                            <img src="../img/main/png/quick_my.png" alt="마이페이지">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div><!-- wrap -->
+
+</body>
+
+</html>
