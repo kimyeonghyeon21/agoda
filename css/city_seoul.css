@@ -178,6 +178,19 @@ section { padding: 150px 0; }
 #city_bottom .bottom_option form h3 { font-size: 2rem; font-weight: 400; padding: 10px 0;}
 #city_bottom .bottom_option form p { padding: 2px 0; color: #999; font-size: 1.6rem; }
 
+#city_bottom .option_mb { width: 70%; position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 99;  background: #fff; border: 1px solid #000; padding: 30px; box-shadow: 4px 4px 15px rgba(0,0,0,0.2); }
+#city_bottom .option_mb .option_mb_list { display: flex; justify-content: space-between; flex-wrap: wrap; }
+#city_bottom .option_mb form { width: calc(50% - 20px);  padding: 30px 0; }
+#city_bottom .option_mb form:nth-child(-n+2) { border-bottom: #000 solid 1px; }
+#city_bottom .option_mb h3 { font-size: 1.6rem; font-weight: 400; padding-bottom: 10px; }
+#city_bottom .option_mb p { font-size: 1.3rem; padding: 2px 0;}
+
+#city_bottom .option_mb .mb_option_close { width: 30px; height: 30px; font-size: 0; position: absolute; right: 20px; top: 20px; cursor: pointer; }
+#city_bottom .option_mb .mb_option_close:after { content: ''; display: block; clear: both; width: 1px; height: 25px; background: #000; transform: rotate(45deg); position: absolute; right: 15px; top: 3px; }
+#city_bottom .option_mb .mb_option_close:before { content: ''; display: block; clear: both; width: 1px; height: 25px; background: #000; transform: rotate(-45deg); position: absolute; right: 15px; top: 3px; }
+#city_bottom .option_mb .mb_option_search { position: absolute; display: inline-block; padding: 5px 20px 2px; font-size: 1.3rem; border: 1px solid #000; right: 30px; bottom: 30px; cursor: pointer; }
+
+
 #city_bottom .bottom_list { width: calc((100% - 20px) - 19.444%); }
 #city_bottom .city_tab { display: flex; justify-content: space-between; width: 50%; text-align: center; }
 #city_bottom .city_tab li { width: calc(100%/4); padding: 12px 0 8px; font-size: 1.8rem; border-bottom: #eee 1px solid; cursor: pointer; color: #999; }
@@ -194,7 +207,8 @@ section { padding: 150px 0; }
 #city_bottom .stand ul li { cursor: pointer; padding: 5px 5px 2px;}
 #city_bottom .stand ul li:hover { background: #eee;}
 
-#city_bottom .stand .down.active:hover:before { transform: rotate(180deg); }
+#city_bottom .stand .down:before { transition: transform 0.3s; }
+#city_bottom .stand .down.active:before { transform: rotate(180deg); }
 
 #city_bottom .bottom_hotel { padding: 20px 0; }
 #city_bottom .bottom_hotel li { border: 1px solid #000; margin-bottom: 20px; width: 100%; height: 420px; display: flex; justify-content: space-between; flex-wrap: wrap; position: relative; }

@@ -143,6 +143,7 @@ section { padding-bottom: 250px; }
 #mv .mv_human ul li { cursor: pointer; padding: 15px 40px 10px;}
 #mv .mv_human ul li:hover { background: #eee;}
 
+#mv .mv_human .down:before { transition: transform 0.3s; }
 #mv .mv_human .down.active:hover:before { transform: rotate(180deg); }
 
 
@@ -208,7 +209,7 @@ section { padding-bottom: 250px; }
 
 #time_rcm .rcm_hotel ul li > img { position: absolute; z-index: 5; right: 20px; top: 20px; object-fit: cover; }
 #time_rcm .rcm_hotel ul li > img:nth-child(3) { position: absolute; z-index: 1; right: 20px; top: 20px; object-fit: cover; }
-#time_rcm .rcm_hotel ul li dl { position: absolute; width: 100%; padding: 0 20px; bottom: 0; border-top: #000 1px solid; height: 96px; }
+#time_rcm .rcm_hotel ul li dl { position: absolute; width: 100%; padding: 0 20px; bottom: 0; border-top: #000 1px solid; height: 96px; background: #fff; }
 
 #time_rcm .rcm_hotel ul li dl dt { font-size: 2.2rem; padding-top: 15px; }
 #time_rcm .rcm_hotel ul li dl dd { font-size: 2.5rem; display: flex; justify-content: space-between; align-items: baseline; }
@@ -221,7 +222,7 @@ section { padding-bottom: 250px; }
 
 #time_rcm .rcm_pension ul li > img { position: absolute; z-index: 5; right: 20px; top: 20px; object-fit: cover; }
 #time_rcm .rcm_pension ul li > img:nth-child(3) { position: absolute; z-index: 1; right: 20px; top: 20px; object-fit: cover; }
-#time_rcm .rcm_pension ul li dl { position: absolute; width: 100%; padding: 0 20px; bottom: 0; border-top: #000 1px solid; height: 96px; }
+#time_rcm .rcm_pension ul li dl { position: absolute; width: 100%; padding: 0 20px; bottom: 0; border-top: #000 1px solid; height: 96px; background: #fff;}
 
 #time_rcm .rcm_pension ul li dl dt { font-size: 2.2rem; padding-top: 15px; }
 #time_rcm .rcm_pension ul li dl dd { font-size: 2.5rem; display: flex; justify-content: space-between; align-items: baseline; }
@@ -240,18 +241,25 @@ section { padding-bottom: 250px; }
     #time_rcm .rcm_text h2 span { font-size: 3rem; }
     #time_rcm .rcm_text p { display: none; }
     #time_rcm .rcm_text { width: 100%; }
+    #time_rcm .rcm_hotel ul li { height: 400px; }
     #time_rcm .rcm_text ul li.active { border-bottom: 1px #fff solid; color: #000; }
-        #time_rcm .rcm_text ul { display: flex; width: 100%; }
+    #time_rcm .rcm_text ul { display: flex; width: 100%; }
     #time_rcm .rcm_text ul li { font-size: 2rem; padding: 15px 5.254% 10px 0; border-bottom: 1px #fff solid; width: 100px; }
     #time_rcm .rcm_text ul li:hover { border-bottom: 1px #fff solid; color: #000; }
     #time_rcm .rcm_hotel { width: 100%; }
+    #time_rcm .rcm_hotel ul li dl { padding: 0 20px; height: 80px; }
     #time_rcm .rcm_hotel ul li dl dt { font-size: 2rem; }
-    #time_rcm .rcm_hotel ul li dl dd { font: 2rem; }
+    #time_rcm .rcm_hotel ul li dl dd { font-size: 2rem; }
     #time_rcm .rcm_hotel ul li dl dd span { font-size: 1.5rem; }
     #time_rcm .rcm_pension { width: 100%; }
+    #time_rcm .rcm_pension ul li { height: 400px; }
+    #time_rcm .rcm_pension ul li dl { padding: 0 20px; height: 80px; }
     #time_rcm .rcm_pension ul li dl dt { font-size: 2rem; }
-    #time_rcm .rcm_pension ul li dl dd { font: 2rem; }
+    #time_rcm .rcm_pension ul li dl dd { font-size: 2rem; }
+    
     #time_rcm .rcm_pension ul li dl dd span { font-size: 1.5rem; }
+
+    #time_rcm .rcm_hotel ul li .rcm_list img, #time_rcm .rcm_pension ul li .rcm_list img { position: absolute; height: 350px; object-fit: cover; width: 100%; }
 }
 
 
@@ -451,7 +459,8 @@ section { padding-bottom: 250px; }
 #agoda_homes .homes_part .part2 { display: flex; justify-content: space-between; height: calc((100% - 20px)/2); }
 #agoda_homes .homes_part ul li { width: calc((100% - 20px)/2); }
 
-#agoda_homes .homes_part .part1 li:nth-of-type(1) { background: url('../img/main/homes_apart.jpg') no-repeat center center; background-size: cover; }
+#agoda_homes .homes_part li a { display: inline-block; height: 100%; width: 100%; }
+#agoda_homes .homes_part .part1 li:nth-of-type(1) { background: url('../img/main/homes_apart.jpg') no-repeat center center; background-size: cover;  }
 #agoda_homes .homes_part .part1 li:nth-of-type(2) { background: url('../img/main/homes_holiday.jpg') no-repeat center center; background-size: cover; }
 #agoda_homes .homes_part .part2 li:nth-of-type(1) { background: url('../img/main/homes_privit.jpg') no-repeat center center; background-size: cover; }
 #agoda_homes .homes_part .part2 li:nth-of-type(2) { background: url('../img/main/homes_banglalo.jpg') no-repeat center center; background-size: cover; }

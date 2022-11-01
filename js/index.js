@@ -579,6 +579,19 @@ $(document).ready(function () {  //문서준비이벤트 시작
 
 
 
+    //option_mb
+    $(".option_mb").hide();
+
+    $(".mb_option").click(function(){
+        $(".option_mb").fadeIn();
+        $('body').css({'overflow':'hidden'});
+    });
+
+    $(".mb_option_close").click(function(){
+        $(".option_mb").fadeOut();
+        $('body').css({'overflow':'auto'});
+    });
+
 
 
     //hotel_top 찜 아이콘
