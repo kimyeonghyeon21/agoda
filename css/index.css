@@ -144,7 +144,7 @@ section { padding-bottom: 250px; }
 #mv .mv_human ul li:hover { background: #eee;}
 
 #mv .mv_human .down:before { transition: transform 0.3s; }
-#mv .mv_human .down.active:hover:before { transform: rotate(180deg); }
+#mv .mv_human .down.active:before { transform: rotate(180deg); }
 
 
 @media(max-width:1024px){
